@@ -1,0 +1,1 @@
+I will learn about variables, conditionals and cycles in C language

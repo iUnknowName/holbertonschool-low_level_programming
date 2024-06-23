@@ -1,0 +1,1 @@
+Initial phase of the project, learning the basics of C

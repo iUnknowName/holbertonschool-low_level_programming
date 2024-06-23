@@ -1,0 +1,1 @@
+In this project we are going to learn everything about the basics of the C language

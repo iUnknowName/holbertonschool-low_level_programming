@@ -3,13 +3,15 @@
 /**
  * times_table - Imprime la tabla de multiplicar del 9, comenzando con 0
  */
+
 void times_table(void)
 {
 	int a, b, c;
 
 	for (a = 0; a < 10; a++)
 	{
-		_putchar('0'); /* Imprime el primer número en cada fila */
+	        /* Imprime el primer número en cada fila */
+		_putchar('0');
 
 		for (b = 1; b < 10; b++)
 		{

@@ -10,7 +10,7 @@ void times_table(void)
 
 	for (a = 0; a < 10; a++)
 	{
-	        /* Imprime el primer número en cada fila */
+		/* Imprime el primer número en cada fila */
 		_putchar('0');
 
 		for (b = 1; b < 10; b++)

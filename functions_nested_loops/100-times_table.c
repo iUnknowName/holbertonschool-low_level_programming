@@ -4,7 +4,6 @@
  * print_number - Prints an integer with proper spacing.
  * @num: The number to print.
  */
-
 void print_number(int num)
 {
 	if (num < 10)
@@ -31,7 +30,6 @@ void print_number(int num)
  * print_times_table - Prints the n times table, starting with 0.
  * @n: The number for the times table.
  */
-
 void print_times_table(int n)
 {
 	int i, j, product;
@@ -40,10 +38,8 @@ void print_times_table(int n)
 		return;
 
 	for (i = 0; i <= n; i++)
-
 	{
 		for (j = 0; j <= n; j++)
-
 		{
 			product = i * j;
 			if (j != 0)
@@ -51,7 +47,14 @@ void print_times_table(int n)
 				_putchar(',');
 				_putchar(' ');
 			}
-			print_number(product);
+			if (j == 0)
+			{
+				_putchar(product + '0');
+			}
+			else
+			{
+				print_number(product);
+			}
 		}
 		_putchar('\n');
 	}

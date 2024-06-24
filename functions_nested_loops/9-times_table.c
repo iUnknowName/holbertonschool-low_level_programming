@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * times_table - Imprime la tabla de multiplicar del 9, comenzando con 0
+ * times_table - Start pointer
  */
 
 void times_table(void)
@@ -10,27 +10,24 @@ void times_table(void)
 
 	for (a = 0; a < 10; a++)
 	{
-		/* Imprime el primer número en cada fila */
 		_putchar('0');
-
 		for (b = 1; b < 10; b++)
 		{
 			_putchar(',');
 			_putchar(' ');
-
 			c = a * b;
-
-		       /* Asegura que el número esté formateado adecuadamente */
-			if (c < 10)
 			{
-				_putchar(' ');
-			      /* Espacio adicional para alinear correctamente */
+				if (c < 10)
+				{
+					_putchar(' ');
+				}
+				else
+				{
+					_putchar((c / 10) + '0');
+				}
 			}
-
-			_putchar((c / 10) + '0'); /* Imprime la decena */
-			_putchar((c % 10) + '0'); /* Imprime la unidad */
+			_putchar((c % 10) + '0');
 		}
-
-		_putchar('\n'); /* Nueva línea al final de cada fila */
+		_putchar('\n');
 	}
 }

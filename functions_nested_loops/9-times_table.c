@@ -18,17 +18,14 @@ void times_table(void)
 
 			c = a * b;
 
-			/* Asegura que el número esté formateado adecuadamente */
+		       /* Asegura que el número esté formateado adecuadamente */
 			if (c < 10)
 			{
-				_putchar(' '); /* Espacio adicional para alinear correctamente */
-				_putchar(' '); /* Incluir espacio adicional si el número es < 10 */
-			}
-			else
-			{
-				_putchar((c / 10) + '0'); /* Imprime la decena */
+				_putchar(' ');
+			      /* Espacio adicional para alinear correctamente */
 			}
 
+			_putchar((c / 10) + '0'); /* Imprime la decena */
 			_putchar((c % 10) + '0'); /* Imprime la unidad */
 		}
 

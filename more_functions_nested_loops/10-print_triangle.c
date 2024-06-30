@@ -1,5 +1,10 @@
 #include <main.h>
 
+/**
+ * print_triangle - prints a triangle of '#' characters of specified size
+ * @size: size of the triangle
+ */
+
 void print_triangle(int size)
 {
 	if (size <= 0)

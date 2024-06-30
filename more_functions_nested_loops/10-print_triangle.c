@@ -1,4 +1,4 @@
-#include <main.h>
+#include "main.h"
 
 /**
  * print_triangle - prints a triangle of '#' characters of specified size
@@ -7,19 +7,24 @@
 
 void print_triangle(int size)
 {
+
+	int row = 0;
+	int character = 0;
+	int space =  0;
+
 	if (size <= 0)
 	{
 		_putchar('\n');
 		return;
 	}
 
-	for (int row = 1; row <= size; row++)
+	for (row = 1; row <= size; row++)
 	{
-		for (int space = size - row; space > 0; space--)
+		for (space = size - row; space > 0; space--)
 		{
 			_putchar(' ');
 		}
-		for (int character = 1; character <= row; character++)
+		for (character = 1; character <= row; character++)
 		{
 			_putchar('#');
 		}

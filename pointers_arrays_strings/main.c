@@ -8,9 +8,9 @@
 
 int main(void)
 {
-	char str[] = "Hello, World!";
-	int length = _strlen(str);
+	char *str;
 
-	printf("Length of '%s' is %d\n", str, length);
+	str = "I do not fear computers. I fear the lack of them - Isaac Asimov";
+	_puts(str);
 	return (0);
 }

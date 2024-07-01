@@ -8,11 +8,9 @@
 
 int main(void)
 {
-	int number = 5;
+	char str[] = "Hello, World!";
+	int length = _strlen(str);
 
-	printf("Initial value of number: %d\n", number);
-	reset_to_98(&number);
-	printf("Value of number after reset: %d\n", number);
-
+	printf("Length of '%s' is %d\n", str, length);
 	return (0);
 }
